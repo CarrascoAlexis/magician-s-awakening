@@ -1,0 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DoorInterraction : MonoBehaviour, InterractorInterface
+{
+    private string test = "MAGEL";
+    public string InteractionPrompt => test;
+
+    public bool Interact(Interractor interactor)
+    {
+        Destroy(this);
+    }
+}
