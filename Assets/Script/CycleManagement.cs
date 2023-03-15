@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class CycleManagement : MonoBehaviour
 {
-    public Light sun;
-    [SerializeField] private float secondsInFullDay;
+    private Light sun;
+    [SerializeField] private float dayLength;
     [Range(0, 1)]
-    public float currentTimeOfDay = 0;
+    [SerializeField] private float currentTimeOfDay;
+
+    void Start()
+    {
+        sun = GetComponent<Light>();
+    }
 
     void Update()
     {
         UpdateSun();
-        currentTimeOfDay += (Time.deltaTime / secondsInFullDay);
+        currentTimeOfDay += (Time.deltaTime / dayLength);
         if (currentTimeOfDay >= 1)
         {
             currentTimeOfDay = 0;
