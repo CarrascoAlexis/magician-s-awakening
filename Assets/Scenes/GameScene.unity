@@ -360,7 +360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayLength: 120
   currentTimeOfDay: 0
-  skyboxLayer: 9
 --- !u!1 &173603636
 GameObject:
   m_ObjectHideFlags: 0
