@@ -183,6 +183,9 @@ MonoBehaviour:
   rayBias:
     m_OverrideState: 0
     m_Value: 0.001
+  distantRayBias:
+    m_OverrideState: 0
+    m_Value: 0.001
   extendShadowCulling:
     m_OverrideState: 0
     m_Value: 0
